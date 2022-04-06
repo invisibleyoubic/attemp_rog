@@ -1,0 +1,5 @@
+g++ src/*.cpp -o tuto -Iinclude -L. -ltcod -Wl,-rpath=. -Wall
+
+copy lib and incude to root of prodgect
+
+TODO: watch how to run it with CodeBlocks
