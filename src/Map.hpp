@@ -1,6 +1,6 @@
 struct Tile {
    bool canWalk;                // can we walk through this tile?
-   Tile() : canWalk(true) {}    // 
+   Tile() : canWalk(false) {}   // default non-walking
 };
 
 class Map {
@@ -14,5 +14,10 @@ public :
 protected :
    Tile *tiles;
 
-   void setWall(int x, int y);
+   friend class BspListener;
+
+   void dig(int x1, int y1, int x2, int y2);
+   void createRoom(bool first, int x1, int y1, int x2, int y2);
+
+   //void setWall(int x, int y);  replaced
 };
