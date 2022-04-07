@@ -1,6 +1,6 @@
 #include "libtcod.hpp"
 
-class Actor ;
+class Actor;
 class Map;
 
 class Engine {
