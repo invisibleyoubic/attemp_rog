@@ -15,6 +15,14 @@ public :
    void update();
    void render();
    bool computeFov;
+
+   enum GameStatus {
+      STARTUP,
+      IDLE,
+      NEW_TURN,
+      VICTORY,
+      DEFEAT
+   } gameStatus;
 };
 
 extern Engine engine;
